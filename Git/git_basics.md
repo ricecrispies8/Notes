@@ -36,3 +36,5 @@ Everything is committed (saved) locally and isn't pushed into Github unless dist
 `$git init` -> create new repository in current directory. Creates .git file with everything you need to work with git
 
 `$git status` -> to check status of repository including for the current branch, what commits have been done, and what files are or are not being tracked.
+
+# I love wifey
