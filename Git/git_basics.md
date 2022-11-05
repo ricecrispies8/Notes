@@ -32,7 +32,28 @@ Everything is committed (saved) locally and isn't pushed into Github unless dist
 5. `$git commit -m "commit name"`
 6. `$git push -u origin main`
 
-## **Basic Commands**
-`$git init` -> create new repository in current directory. Creates .git file with everything you need to work with git
+## **Recording Changes to a Repository**
+All files are either tracked or untracked. Tracked means Git knows about it and has an existing snapshot of it. Git also knows if those files have been modified. To start tracking a file (use `$git status` to see which files are un/tracked), simply using `$git add filename.ext`.
 
-`$git status` -> to check status of repository including for the current branch, what commits have been done, and what files are or are not being tracked.
+You can create a list of files/folders to ignore using .gitignore file. Then list all files/folders using regex-style commands. 
+
+If you move or rename a file/folder, this also needs to be recorded in Git as Git does not track file movement/renaming. This can be done quickly with `$git mv file_from file_to`. Otherwise you will need to remove/rename the file normally, drop it from Git and then readd it again. 
+
+## **Basic Commands**
+`$git init` -> create new repository in current directory. Creates .git file with everything you need to work with git. Not quite sure how to move this over to Github.
+
+`$git status` -> to check status of repository including for the current branch, what commits have been done, and what files are or are not being tracked. Use `-s` tag to make the status less verbose. 
+
+`$git config --list` -> to check the username, email, and default branch name
+
+`$git add *` -> adds all files or folders in the git folder to the staging area. 
+
+`$git commit -m "commit name"` -> commits (saves) all those files in the staging area. Can skip the staging area altogether by using the `-a` tag. 
+
+`$git rm filename` -> removes file from being tracked. 
+
+`$git mv file_from file_to`-> If you move or rename a file/folder, this also needs to be recorded in Git as Git does not track file movement/renaming. Use this method, otherwise you will need to remove/rename the file normally, drop it from Git, and then read it again. 
+
+`$git push -u origin main` ->pushes your commits to the main file on Github. If you are not using SSH, you will need your username and password which is apparently depracated. Guess you better have SSH ready. 
+
+`$git clone git@github.com:<user_name>/<repo_name>.git`-> grabs a copy of an already existing repo on Github using SSH. Since SSH is already set-up on this computer, everything is good. 

@@ -2,6 +2,23 @@
 
 ## Smaller Title
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Hi this is my text. I am typing something new.
 
 ```sql
@@ -24,4 +41,6 @@ In-line can work too `SELECT * FROM table` with this formating.
 Hover over pic to see caption
 
 ![image](./Pineapple.jpeg "Picture of a pineapple") 
+
+[Link to Title section above](#title)
 
